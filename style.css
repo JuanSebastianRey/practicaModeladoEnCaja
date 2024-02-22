@@ -3,3 +3,21 @@
     padding: 0;
     background: whitesmoke;
 }
+.main{
+    display: grid;
+    border: 2px inset red;
+    width: 1380px;
+    height: 100dvh;
+    grid-template-columns:  30% 1fr;;
+    grid-template-rows: 
+    [row1-start] "header header" 25px [row1-end] 
+    [row2-start] "main . sidebar" 25px [row2-end];
+}
+.box{
+    font-style: italic;
+    border: double violet;
+}
+
+.item-4{
+    grid-area: main;
+}
