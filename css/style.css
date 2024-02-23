@@ -3,3 +3,32 @@
     padding: 0;
     background: whitesmoke;
 }
+
+.menu{
+    display: flex;
+    flex-flow: column wrap;
+    border: 2px solid white;
+    clear: both;
+    list-style: none;
+    border: 2px pink solid;
+}
+.menu li{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+}
+.menu a{
+    justify-content: space-between;
+    border: 2px solid black;
+    background: white ;
+}
+.menu li a{
+    text-decoration: none;
+    color: #B19826;
+    padding: 15px;
+    display: inline-block;
+}
+.menu a:hover{
+    background: blue;
+    color:white
+}
