@@ -1,0 +1,1 @@
+![](https://github.com/JuanSebastianRey/practicaMdoeladoEnCaja/blob/main/storage/img/Ejercicio1.jpg)
