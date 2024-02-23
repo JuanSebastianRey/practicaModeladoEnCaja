@@ -6,7 +6,7 @@
 .main{
     display: grid;
     border: 2px inset red;
-    width: 1380px;
+    width: auto;
     height: 100dvh;
     grid-template-columns:  30% 1fr;;
     grid-template-rows: 
