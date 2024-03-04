@@ -1,23 +1,249 @@
+
 *{
-    margin: 0;
     padding: 0;
-    background: whitesmoke;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none
 }
-.main{
-    display: grid;
-    border: 2px inset red;
-    width: auto;
-    height: 100dvh;
-    grid-template-columns:  30% 1fr;;
-    grid-template-rows: 
-    [row1-start] "header header" 25px [row1-end] 
-    [row2-start] "main . sidebar" 25px [row2-end];
-}
-.box{
-    font-style: italic;
-    border: double violet;
+body{
+
+    display: flex;
+    height: 100vh;
 }
 
-.item-4{
-    grid-area: main;
+/* lado izquierdo de la pagina */
+
+.left{
+
+    flex: 1;
+    height: 100%;
+    background-color: #fff;
+}
+
+
+.titulo img{
+
+    width: 50px;
+    height: 40px;
+    padding-left: 9px;
+    
+
+
+}
+.titulo{
+
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    height: 40px;
+    color: #3182f2;
+    margin: 15px 8px 8px 8px;
+    gap: 15px
+
+}
+
+.cajaGrandeDashboard{
+
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dashboard img{
+
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    font-size: 5px;
+}
+
+.dashboard{
+    background-color: #1775f1;
+    padding: 10px;
+    border-radius: 10px;
+    width: 260px;
+    margin: 6px;
+    font-size: 8px;
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+    margin-top: 20px;
+    gap: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    
+}
+
+
+
+
+.item{
+
+    padding: 10px;
+    border-radius: 10px;
+    width: 260px;
+    margin: 6px;
+    font-size: 9px;
+    display: flex;
+    justify-content: flex-start;
+    color: #000;
+    gap: 10px;
+    cursor: pointer
+}
+
+
+.item:hover{
+    background-color: #bbb;
+    transition: 0.3s ease;
+}
+
+
+
+.item img{
+
+    width: 20px;
+    height: 20px;
+}
+
+.item p{
+
+    font-size: 15px;
+}
+
+.MAIN{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #8a8a8a
+    
+}
+
+.MAIN b:first-child{
+
+    display: flex;
+    width: 100%;
+    padding: 20px 20px 0px 20px;
+    color: #8a8a8a
+
+}
+
+/* Lado derecho de la pagina */
+.right{
+
+    flex: 6;
+    height: 100%;
+    background-color: rgb(229, 225, 225);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.barraMenu{
+
+    background-color: #fff;
+    display: flex;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 10px 20px
+    
+}
+.barraMenu img{
+
+    width: 35px;
+    height: 30px;
+    padding-left: 9px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.barraMenu :last-child{
+
+    width: 45px;
+    height: 35px;
+
+}
+
+
+.boxAdministrador{
+
+    margin: 30px 20px 20px 20px;
+    font-size: 15px;
+}
+
+.boxAdministrador p{
+
+    margin-top: 7px
+}
+
+.charts{
+
+    margin: 20px 20px 0px 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto
+
+}
+
+.chart{
+
+    flex: 1;
+    background-color: #fff;
+    height: 165px;
+    justify-content: center;;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 13px #a3a3a3bb;
+
+
+}
+
+.chart .boxPorcentaje{
+
+    background-color: #cccc;
+    height: 13px;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 25px
+}
+
+.boxPorcentaje .porcentaje{
+
+    background-color: #1775f1;
+    height: 13px;
+    width: 40%;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+.chart b{
+
+    display: flex;
+    margin-top: 18px
+
+
+}
+.salesReport{
+
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px #a3a3a3bb
+
+}
+
+.salesReport p{
+
+    margin-top: 10px;
 }
